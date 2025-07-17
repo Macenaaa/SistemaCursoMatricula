@@ -58,10 +58,10 @@ CREATE TABLE matricula (
     CONSTRAINT fk_aluno FOREIGN KEY (aluno_id) REFERENCES aluno(id) ON DELETE CASCADE,
     CONSTRAINT fk_curso FOREIGN KEY (curso_id) REFERENCES curso(id) ON DELETE CASCADE
 );
-```
 
 
-```View
+
+
 -- View para alunos não matriculados
 CREATE OR REPLACE VIEW alunos_nao_matriculados AS
 SELECT a.id, a.nome, a.email
