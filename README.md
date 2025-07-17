@@ -82,3 +82,4 @@ SELECT c.id, c.nome, c.descricao
 FROM curso c
 LEFT JOIN matricula m ON c.id = m.curso_id
 WHERE m.aluno_id IS NULL;
+```
